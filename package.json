@@ -1,0 +1,24 @@
+{
+  "name": "git-test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattEastman/React_Course.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattEastman/React_Course/issues"
+  },
+  "homepage": "https://github.com/MattEastman/React_Course#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
