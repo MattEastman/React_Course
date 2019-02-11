@@ -1,5 +1,5 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "App.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -15,5 +15,11 @@
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
   },
-  "private": true
+  "private": true,
+  "name": "nameidk",
+  "version": "1.0.0",
+  "description": "dd",
+  "license": "MIT",
+  "repository": "https://github.com/MattEastman/React_Course.git",
+  "author": "me"
 }
