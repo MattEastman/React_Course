@@ -7,54 +7,61 @@ import Contact from './ContactComponent';
 import Dishdetail from './DishdetailComponent';
 import Home from './HomeComponent';
 import Menu from './MenuComponent';
+import {Icon} from 'react-native-elements';
 
 const AboutNavigator = createStackNavigator({
   About: { screen: About }
 },
 {
-  navigationOptions: {
+  navigationOptions: ({navigation}) => ({
     headerStyle: {
       backgroundColor: '#512EA8'
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
-      color: '#fff'
+      color: '#fff',
+        headerLeft:<Icon name='menu' size={24} color='white', onPress={()=>navigation.toggleDrawer()} />
     }
-  }
+  })
 });
 
 const ContactNavigator = createStackNavigator({
   Contact: { screen: Contact }
 },
 {
-  navigationOptions: {
+  navigationOptions: ({navigation}) => ({
     headerStyle: {
       backgroundColor: '#512EA8'
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
-      color: '#fff'
+      color: '#fff',
+        headerLeft:<Icon name='menu' size={24} color='white', onPress={()=>navigation.toggleDrawer()} />
     }
-  }
+  })
 });
 
 const HomeNavigator = createStackNavigator({
   Home: { screen: Home }
 },
 {
-  navigationOptions: {
+  navigationOptions: ({navigation}) => ({
     headerStyle: {
       backgroundColor: '#512EA8'
     },
     headerTintColor: '#fff',
     headerTitleStyle: {
-      color: '#fff'
+      color: '#fff',
+        headerLeft:<Icon name='menu' size={24} color='white', onPress={()=>navigation.toggleDrawer()} />
     }
-  }
+  })
 });
 
 const MenuNavigator = createStackNavigator({
-  Menu: { screen: Menu },
+  Menu: { screen: Menu,
+        navigationOptions:({navigation}) => ({
+            headerLeft:<Icon name='menu' size={24} color='white', onPress={()=>navigation.toggleDrawer()} />
+        }) },
   Dishdetail: { screen: Dishdetail }
 },
 {
